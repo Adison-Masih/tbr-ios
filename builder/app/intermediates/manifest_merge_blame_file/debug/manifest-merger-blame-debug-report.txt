@@ -1,0 +1,142 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.adicode.thebeautyrox"
+4    android:versionCode="1"
+5    android:versionName="1.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->F:\flutter\the_beauty_rox\android\app\src\main\AndroidManifest.xml:36:5-67
+14-->F:\flutter\the_beauty_rox\android\app\src\main\AndroidManifest.xml:36:22-64
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+15-->F:\flutter\the_beauty_rox\android\app\src\debug\AndroidManifest.xml:7:5-77
+15-->F:\flutter\the_beauty_rox\android\app\src\debug\AndroidManifest.xml:7:22-74
+16    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+16-->F:\flutter\the_beauty_rox\android\app\src\debug\AndroidManifest.xml:8:5-84
+16-->F:\flutter\the_beauty_rox\android\app\src\debug\AndroidManifest.xml:8:22-82
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+17-->F:\flutter\the_beauty_rox\android\app\src\main\AndroidManifest.xml:34:5-79
+17-->F:\flutter\the_beauty_rox\android\app\src\main\AndroidManifest.xml:34:22-76
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->F:\flutter\the_beauty_rox\android\app\src\main\AndroidManifest.xml:35:5-81
+18-->F:\flutter\the_beauty_rox\android\app\src\main\AndroidManifest.xml:35:22-78
+19    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+19-->F:\flutter\the_beauty_rox\android\app\src\debug\AndroidManifest.xml:8:5-84
+19-->F:\flutter\the_beauty_rox\android\app\src\debug\AndroidManifest.xml:8:22-82
+20
+21    <queries>
+21-->F:\flutter\the_beauty_rox\android\app\src\main\AndroidManifest.xml:38:5-43:15
+22        <intent>
+22-->F:\flutter\the_beauty_rox\android\app\src\main\AndroidManifest.xml:39:9-42:18
+23            <action android:name="android.intent.action.DIAL" />
+23-->F:\flutter\the_beauty_rox\android\app\src\main\AndroidManifest.xml:40:13-65
+23-->F:\flutter\the_beauty_rox\android\app\src\main\AndroidManifest.xml:40:21-62
+24
+25            <data android:scheme="tel" />
+25-->F:\flutter\the_beauty_rox\android\app\src\main\AndroidManifest.xml:41:13-42
+25-->F:\flutter\the_beauty_rox\android\app\src\main\AndroidManifest.xml:41:19-39
+26        </intent>
+27    </queries>
+28
+29    <application
+30        android:name="android.app.Application"
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.6.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d358c7814fdfa88f43ab288e4343070a\core-1.6.0\AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+34        android:label="The Beauty Rox" >
+35        <activity
+36            android:name="com.adicode.thebeautyrox.MainActivity"
+37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+38            android:exported="true"
+39            android:hardwareAccelerated="true"
+40            android:launchMode="singleTop"
+41            android:theme="@style/LaunchTheme"
+42            android:windowSoftInputMode="adjustResize" >
+43
+44            <!--
+45                 Specifies an Android theme to apply to this Activity as soon as
+46                 the Android process has started. This theme is visible to the user
+47                 while the Flutter UI initializes. After that, this theme continues
+48                 to determine the Window background behind the Flutter UI.
+49            -->
+50            <meta-data
+51                android:name="io.flutter.embedding.android.NormalTheme"
+52                android:resource="@style/NormalTheme" />
+53
+54            <intent-filter>
+55                <action android:name="android.intent.action.MAIN" />
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+58            </intent-filter>
+59        </activity>
+60        <!--
+61             Don't delete the meta-data below.
+62             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+63        -->
+64        <meta-data
+65            android:name="flutterEmbedding"
+66            android:value="2" />
+67
+68        <provider
+68-->[:share_plus] F:\flutter\the_beauty_rox\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+69            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+69-->[:share_plus] F:\flutter\the_beauty_rox\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-77
+70            android:authorities="com.adicode.thebeautyrox.flutter.share_provider"
+70-->[:share_plus] F:\flutter\the_beauty_rox\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+71            android:exported="false"
+71-->[:share_plus] F:\flutter\the_beauty_rox\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+72            android:grantUriPermissions="true" >
+72-->[:share_plus] F:\flutter\the_beauty_rox\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+73            <meta-data
+73-->[:share_plus] F:\flutter\the_beauty_rox\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:68
+74                android:name="android.support.FILE_PROVIDER_PATHS"
+74-->[:share_plus] F:\flutter\the_beauty_rox\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+75                android:resource="@xml/flutter_share_file_paths" />
+75-->[:share_plus] F:\flutter\the_beauty_rox\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-65
+76        </provider>
+77
+78        <activity
+78-->[:url_launcher_android] F:\flutter\the_beauty_rox\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+79            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+79-->[:url_launcher_android] F:\flutter\the_beauty_rox\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+80            android:exported="false"
+80-->[:url_launcher_android] F:\flutter\the_beauty_rox\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+81            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+81-->[:url_launcher_android] F:\flutter\the_beauty_rox\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+82
+83        <service
+83-->[:location] F:\flutter\the_beauty_rox\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-15:56
+84            android:name="com.lyokone.location.FlutterLocationService"
+84-->[:location] F:\flutter\the_beauty_rox\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-71
+85            android:enabled="true"
+85-->[:location] F:\flutter\the_beauty_rox\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-35
+86            android:exported="false"
+86-->[:location] F:\flutter\the_beauty_rox\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+87            android:foregroundServiceType="location" />
+87-->[:location] F:\flutter\the_beauty_rox\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-53
+88
+89        <activity
+89-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\37a906db85eb4e796e92c5e159d8fcac\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+90            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+90-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\37a906db85eb4e796e92c5e159d8fcac\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+91            android:exported="false"
+91-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\37a906db85eb4e796e92c5e159d8fcac\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+92            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+92-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\37a906db85eb4e796e92c5e159d8fcac\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+93
+94        <meta-data
+94-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2eae664b360e9d08642a7dd161b1173c\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+95            android:name="com.google.android.gms.version"
+95-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2eae664b360e9d08642a7dd161b1173c\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+96            android:value="@integer/google_play_services_version" />
+96-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2eae664b360e9d08642a7dd161b1173c\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+97    </application>
+98
+99</manifest>
